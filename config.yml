@@ -1,0 +1,10 @@
+name: Nathan
+
+logging:
+  appenders:
+    - type: console
+      layout:
+        type: json
+
+server:
+  enableVirtualThreads: true
