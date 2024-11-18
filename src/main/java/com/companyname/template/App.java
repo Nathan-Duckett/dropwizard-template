@@ -3,7 +3,6 @@ package com.companyname.template;
 import io.dropwizard.configuration.EnvironmentVariableSubstitutor;
 import io.dropwizard.configuration.SubstitutingSourceProvider;
 import io.dropwizard.core.Application;
-import io.dropwizard.core.Configuration;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
 import io.federecio.dropwizard.swagger.SwaggerBundle;
@@ -30,7 +29,7 @@ public class App extends Application<Config> {
                 .build());
 
         // Swagger configuration
-        bootstrap.addBundle(new SwaggerBundle<Config>() {
+        bootstrap.addBundle(new SwaggerBundle<>() {
             @Override
             protected SwaggerBundleConfiguration getSwaggerBundleConfiguration(Config configuration) {
                 return configuration.getSwaggerBundleConfiguration();
