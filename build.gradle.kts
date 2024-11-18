@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("io.dropwizard:dropwizard-bom:4.0.7"))
+    implementation(platform("io.dropwizard:dropwizard-bom:4.0.10"))
 
     implementation("io.dropwizard:dropwizard-core")
     implementation("io.dropwizard:dropwizard-json-logging")

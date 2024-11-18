@@ -1,4 +1,4 @@
-name: Nathan
+environment: ${ENVIRONMENT:-dev}
 
 logging:
   appenders:

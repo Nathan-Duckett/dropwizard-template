@@ -5,10 +5,10 @@ import io.dropwizard.core.Configuration;
 
 public class Config extends Configuration {
     @JsonProperty
-    private String name;
+    private String environment;
 
-    public String getName() {
-        return name;
+    public String getEnvironment() {
+        return environment;
     }
 
 }
