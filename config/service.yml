@@ -8,3 +8,8 @@ logging:
 
 server:
   enableVirtualThreads: true
+  requestLog:
+    appenders:
+      - type: console
+        layout:
+          type: access-json
