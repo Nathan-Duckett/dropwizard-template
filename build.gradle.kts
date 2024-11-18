@@ -14,6 +14,7 @@ dependencies {
     implementation("io.dropwizard:dropwizard-json-logging")
 
     implementation("ru.vyarus:dropwizard-guicey:7.1.4")
+    implementation("com.smoketurner:dropwizard-swagger:4.0.5-1")
 
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")

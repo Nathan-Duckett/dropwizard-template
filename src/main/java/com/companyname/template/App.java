@@ -3,8 +3,11 @@ package com.companyname.template;
 import io.dropwizard.configuration.EnvironmentVariableSubstitutor;
 import io.dropwizard.configuration.SubstitutingSourceProvider;
 import io.dropwizard.core.Application;
+import io.dropwizard.core.Configuration;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
+import io.federecio.dropwizard.swagger.SwaggerBundle;
+import io.federecio.dropwizard.swagger.SwaggerBundleConfiguration;
 import io.sentry.Sentry;
 import ru.vyarus.dropwizard.guice.GuiceBundle;
 
@@ -25,6 +28,14 @@ public class App extends Application<Config> {
         bootstrap.addBundle(GuiceBundle.builder()
                 .enableAutoConfig()
                 .build());
+
+        // Swagger configuration
+        bootstrap.addBundle(new SwaggerBundle<Config>() {
+            @Override
+            protected SwaggerBundleConfiguration getSwaggerBundleConfiguration(Config configuration) {
+                return configuration.getSwaggerBundleConfiguration();
+            }
+        });
     }
 
 

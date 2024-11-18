@@ -1,6 +1,9 @@
 environment: ${ENVIRONMENT:-dev}
 sentryDsn: ${SENTRY_DSN:-}
 
+swagger:
+  resourcePackage: com.companyname.template.resources
+
 logging:
   appenders:
     - type: console
