@@ -12,6 +12,6 @@ public class App extends Application<Config> {
 
     @Override
     public void run(Config config, Environment environment) throws Exception {
-        environment.jersey().register(new RootResource(config));
+        environment.jersey().register(new RootResource());
     }
 }
