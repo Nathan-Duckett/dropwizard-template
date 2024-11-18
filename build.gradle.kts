@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("com.google.cloud.tools.jib") version("3.4.4")
 }
 
 repositories {
@@ -18,4 +19,15 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+jib {
+    extraDirectories.setPaths("config/")
+    to {
+        image = "nathanduckett/${name}:latest"
+        tags = setOf("latest", version.toString())
+    }
+    container {
+        args = listOf("server", "service.yml")
+    }
 }
