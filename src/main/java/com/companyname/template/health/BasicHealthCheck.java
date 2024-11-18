@@ -12,7 +12,7 @@ public class BasicHealthCheck extends NamedHealthCheck {
     }
 
     @Override
-    protected Result check() throws Exception {
+    protected Result check() {
         return Result.builder()
                 .healthy()
                 .withDetail("sentry_enabled", Sentry.isEnabled())
