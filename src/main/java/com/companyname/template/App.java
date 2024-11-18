@@ -1,8 +1,11 @@
 package com.companyname.template;
 
-import com.companyname.template.resources.RootResource;
+import io.dropwizard.configuration.EnvironmentVariableSubstitutor;
+import io.dropwizard.configuration.SubstitutingSourceProvider;
 import io.dropwizard.core.Application;
+import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
+import ru.vyarus.dropwizard.guice.GuiceBundle;
 
 public class App extends Application<Config> {
 
@@ -11,7 +14,20 @@ public class App extends Application<Config> {
     }
 
     @Override
+    public void initialize(Bootstrap<Config> bootstrap) {
+        // Enable variable substitution with environment variables
+        bootstrap.setConfigurationSourceProvider(new SubstitutingSourceProvider(
+                bootstrap.getConfigurationSourceProvider(),
+                new EnvironmentVariableSubstitutor(false)));
+
+        // Guice DI support for Dropwizard
+        bootstrap.addBundle(GuiceBundle.builder()
+                .enableAutoConfig()
+                .build());
+    }
+
+
+    @Override
     public void run(Config config, Environment environment) throws Exception {
-        environment.jersey().register(new RootResource());
     }
 }

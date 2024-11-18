@@ -9,9 +9,10 @@ repositories {
 
 dependencies {
     implementation(platform("io.dropwizard:dropwizard-bom:4.0.10"))
-
     implementation("io.dropwizard:dropwizard-core")
     implementation("io.dropwizard:dropwizard-json-logging")
+
+    implementation("ru.vyarus:dropwizard-guicey:7.1.4")
 
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
