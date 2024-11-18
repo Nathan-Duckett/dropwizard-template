@@ -1,6 +1,7 @@
 plugins {
     id("java")
     id("com.google.cloud.tools.jib") version("3.4.4")
+    id("io.sentry.jvm.gradle") version("4.13.0")
 }
 
 repositories {
@@ -39,4 +40,15 @@ jib {
     container {
         args = listOf("server", "service.yml")
     }
+}
+
+sentry {
+    // Generates a JVM (Java, Kotlin, etc.) source bundle and uploads your source code to Sentry.
+    // This enables source context, allowing you to see your source
+    // code as part of your stack traces in Sentry.
+    includeSourceContext = true
+
+    org = "nduckett"
+    projectName = name
+    authToken = System.getenv("SENTRY_AUTH_TOKEN")
 }

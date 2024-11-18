@@ -5,6 +5,7 @@ import io.dropwizard.configuration.SubstitutingSourceProvider;
 import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
+import io.sentry.Sentry;
 import ru.vyarus.dropwizard.guice.GuiceBundle;
 
 public class App extends Application<Config> {
@@ -29,5 +30,10 @@ public class App extends Application<Config> {
 
     @Override
     public void run(Config config, Environment environment) throws Exception {
+        Sentry.init(options -> {
+            options.setEnabled(config.getSentryDsn() != null);
+            options.setDsn(config.getSentryDsn());
+            options.setEnvironment(config.getEnvironment());
+        });
     }
 }

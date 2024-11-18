@@ -1,4 +1,5 @@
 environment: ${ENVIRONMENT:-dev}
+sentryDsn: ${SENTRY_DSN:-}
 
 logging:
   appenders:
