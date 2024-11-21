@@ -1,5 +1,10 @@
 environment: ${ENVIRONMENT:-dev}
 sentryDsn: ${SENTRY_DSN:-}
+applicationName: dropwizard-template
+
+pyroscopeUrl: ${PYROSCOPE_URL}
+pyroscopeUser: ${PYROSCOPE_USER}
+pyroscopePass: ${PYROSCOPE_PASS}
 
 swagger:
   resourcePackage: com.companyname.template.resources
@@ -17,3 +22,11 @@ server:
       - type: console
         layout:
           type: access-json
+
+#metrics:
+#  reporters:
+#    - type: graphite
+#      host: ${GRAPHITE_URL:-}
+#      port: 443
+#      prefix: dropwizard_template
+#      transport: tcp

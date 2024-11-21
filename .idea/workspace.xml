@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10e338a6-25a3-4547-973b-c1a14e27a1ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/template-cleanup.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/template-cleanup/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/companyname/template/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/companyname/template/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/companyname/template/resources/RootResource.java" afterDir="false" />
+    <list default="true" id="10e338a6-25a3-4547-973b-c1a14e27a1ef" name="Changes" comment="Remove unneeded checked exceptions">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/companyname/template/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/companyname/template/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/companyname/template/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/companyname/template/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/companyname/template/resources/RootResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/companyname/template/resources/RootResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +23,43 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dropwizard-template" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dropwizard-template" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dropwizard-template" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dropwizard-template" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="jib" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -44,6 +70,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nathan-Duckett&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nathan-Duckett/dropwizard-template.git&quot;,
+    &quot;accountId&quot;: &quot;4c6fd9d8-1c28-4168-afae-3f4565af2cb1&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -58,6 +96,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.dropwizard [:App.main()].executor": "Run",
+    "Gradle.dropwizard-template [dependencies].executor": "Run",
+    "Gradle.dropwizard-template [jib].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -71,7 +111,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.dropwizard-template [jib]">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nduckett.dropwizard.App" />
       <module name="dropwizard.main" />
@@ -86,9 +126,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dropwizard-template [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="dropwizard-template [jib]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jib" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DropwizardApplication" />
+        <item itemvalue="Gradle.dropwizard-template [jib]" />
+        <item itemvalue="Gradle.dropwizard-template [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -111,10 +196,115 @@
       <workItem from="1720087383082" duration="2678000" />
       <workItem from="1721511746483" duration="717000" />
       <workItem from="1721811796990" duration="353000" />
+      <workItem from="1731903123996" duration="6673000" />
+      <workItem from="1732176277574" duration="4301000" />
     </task>
+    <task id="LOCAL-00001" summary="Support environment as config option">
+      <option name="closed" value="true" />
+      <created>1731903580584</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731903580584</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix injection">
+      <option name="closed" value="true" />
+      <created>1731903852973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731903852973</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add jib support">
+      <option name="closed" value="true" />
+      <created>1731904911705</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731904911705</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Guice dependency injection">
+      <option name="closed" value="true" />
+      <created>1731905266225</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731905266225</updated>
+    </task>
+    <task id="LOCAL-00005" summary="JSON access logs">
+      <option name="closed" value="true" />
+      <created>1731905376150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731905376150</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Set Java toolchain versions">
+      <option name="closed" value="true" />
+      <created>1731905912359</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731905912359</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add Sentry">
+      <option name="closed" value="true" />
+      <created>1731907034722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731907034722</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add Swagger">
+      <option name="closed" value="true" />
+      <created>1731907783187</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731907783187</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add endpoint types and JSON body">
+      <option name="closed" value="true" />
+      <created>1731908078765</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731908078765</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add healthcheck">
+      <option name="closed" value="true" />
+      <created>1731918536587</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731918536587</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Remove unneeded checked exceptions">
+      <option name="closed" value="true" />
+      <created>1731919863511</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731919863511</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Support environment as config option" />
+    <MESSAGE value="Fix injection" />
+    <MESSAGE value="Add jib support" />
+    <MESSAGE value="Add Guice dependency injection" />
+    <MESSAGE value="JSON access logs" />
+    <MESSAGE value="Set Java toolchain versions" />
+    <MESSAGE value="Add Sentry" />
+    <MESSAGE value="Add Swagger" />
+    <MESSAGE value="Add endpoint types and JSON body" />
+    <MESSAGE value="Add healthcheck" />
+    <MESSAGE value="Remove unneeded checked exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unneeded checked exceptions" />
   </component>
 </project>

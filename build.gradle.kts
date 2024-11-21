@@ -12,9 +12,13 @@ dependencies {
     implementation(platform("io.dropwizard:dropwizard-bom:4.0.10"))
     implementation("io.dropwizard:dropwizard-core")
     implementation("io.dropwizard:dropwizard-json-logging")
+    implementation("io.dropwizard:dropwizard-metrics-graphite")
+    implementation("io.dropwizard.metrics:metrics-core")
+    implementation("io.dropwizard.metrics:metrics-graphite:4.2.28")
 
     implementation("ru.vyarus:dropwizard-guicey:7.1.4")
     implementation("com.smoketurner:dropwizard-swagger:4.0.5-1")
+    implementation("io.pyroscope:agent:0.14.0")
 
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")

@@ -1,5 +1,6 @@
 package com.companyname.template.resources;
 
+import com.codahale.metrics.annotation.Timed;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -14,6 +15,7 @@ import java.util.Map;
 @Consumes(MediaType.APPLICATION_JSON)
 public class RootResource {
 
+    @Timed
     @GET
     public Response sayHello() throws InterruptedException {
         long sleepDuration = (long) (Math.random() * 200);

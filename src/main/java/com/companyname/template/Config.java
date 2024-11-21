@@ -14,6 +14,19 @@ public class Config extends Configuration {
     @JsonProperty("swagger")
     private SwaggerBundleConfiguration swaggerBundleConfiguration;
 
+    @JsonProperty
+    private String graphiteUrl;
+
+    @JsonProperty
+    private String applicationName;
+
+    @JsonProperty
+    private String pyroscopeUrl;
+    @JsonProperty
+    private String pyroscopeUser;
+    @JsonProperty
+    private String pyroscopePass;
+
     public String getEnvironment() {
         return environment;
     }
@@ -24,6 +37,26 @@ public class Config extends Configuration {
 
     public SwaggerBundleConfiguration getSwaggerBundleConfiguration() {
         return swaggerBundleConfiguration;
+    }
+
+    public String getGraphiteUrl() {
+        return graphiteUrl;
+    }
+
+    public String getApplicationName() {
+        return applicationName;
+    }
+
+    public String getPyroscopeUrl() {
+        return pyroscopeUrl;
+    }
+
+    public String getPyroscopeUser() {
+        return pyroscopeUser;
+    }
+
+    public String getPyroscopePass() {
+        return pyroscopePass;
     }
 
 }
